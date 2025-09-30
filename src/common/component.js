@@ -5,9 +5,9 @@ class Component extends HTMLElement {
 
   resources = {
     fonts: {
-      roboto: '<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">',
-      nunito: '<link href="https://fonts.googleapis.com/css?family=Nunito:200" rel="stylesheet">',
-      raleway: '<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">'
+      jbm: '<link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:100,400,700" rel="stylesheet">',
+      worksan: '<link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">',
+      inter: '<link href="https://fonts.googleapis.com/css?family=Inter:600" rel="stylesheet">'
     },
     icons: {
       material: '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">',

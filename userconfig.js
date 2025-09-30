@@ -12,29 +12,34 @@ const default_config = {
     },
     "search": {
         "engines": {
-            "sp": [
-                "https://www.startpage.com/sp/search?query=",
-                "Startpage"
-            ],
-            "g": [
-                "https://google.com/search?q=",
-                "Google"
-            ],
             "d": [
                 "https://duckduckgo.com/html?q=",
                 "DuckDuckGo"
             ],
-            "y": [
-                "https://youtube.com/results?search_query=",
-                "Youtube"
+
+            "g": [
+                "https://google.com/search?q=",
+                "Google"
             ],
+
+            "p": [
+                "https://www.pinterest.es/search/pins/?q=",
+                "Pinterest"
+            ],
+                             
             "r": [
                 "https://www.reddit.com/search/?q=",
                 "Reddit"
             ],
-            "p": [
-                "https://www.pinterest.es/search/pins/?q=",
-                "Pinterest"
+
+            "sp": [
+                "https://www.startpage.com/sp/search?query=",
+                "Startpage"
+            ],
+
+            "y": [
+                "https://youtube.com/results?search_query=",
+                "Youtube"
             ]
         }
     },

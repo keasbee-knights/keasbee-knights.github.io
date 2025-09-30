@@ -24,7 +24,7 @@ class Statusbar extends Component {
 
   imports() {
     return [
-      this.resources.fonts.roboto,
+      this.resources.fonts.jbm,
       this.resources.icons.material,
       this.resources.libs.awoo,
     ];
@@ -68,7 +68,7 @@ class Statusbar extends Component {
       #tabs ul li:not(:last-child) {
           width: 35px;
           text-align: center;
-          font: 700 13px 'Yu Gothic', serif;
+          font: 700 13px 'JetBrains Mono', monospace;
           color: rgba(212, 190, 152, 0.5);
           padding: 6px 0;
           transition: all .1s;

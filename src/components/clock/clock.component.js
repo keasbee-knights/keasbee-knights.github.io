@@ -11,7 +11,7 @@ class Clock extends Component {
   imports() {
     return [
       this.resources.icons.material,
-      this.resources.fonts.roboto
+      this.resources.fonts.jbm
     ];
   }
 
@@ -19,7 +19,7 @@ class Clock extends Component {
     return `
         .clock-time {
             white-space: nowrap;
-            font: 300 9pt 'Roboto', sans-serif;
+            font: 300 9pt 'JetBrains Mono', monospace;
             color: #d4be98;
             letter-spacing: .5px;
         }
