@@ -49,7 +49,7 @@ const default_config = {
     },
     "disabled": [],
     "localIcons": false,
-    "fastlink": "duck.ai",
+    "fastlink": "https://duck.ai",
     "openLastVisitedTab": true,
     "tabs": [
         {
