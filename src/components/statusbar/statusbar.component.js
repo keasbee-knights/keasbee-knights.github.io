@@ -230,12 +230,12 @@ class Statusbar extends Component {
         <div id="tabs">
             <cols>
                 <button class="+ fastlink">
-                  <img class="fastlink-icon" src="src/img/pokeball.svg"/>
+                  <img class="fastlink-icon" src="src/img/duckduckai.svg"/>
                 </button>
                 <ul class="- indicator"></ul>
                 <div class="+ widgets col-end">
-                    <current-time class="+ widget"></current-time>
                     <weather-forecast class="+ widget weather"></weather-forecast>
+                    <current-time class="+ widget"></current-time>
                 </div>
             </cols>
         </div>`;
