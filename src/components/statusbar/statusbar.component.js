@@ -25,7 +25,6 @@ class Statusbar extends Component {
   imports() {
     return [
       this.resources.fonts.jbm,
-      this.resources.fonts.roboto,
       this.resources.icons.material,
       this.resources.libs.awoo,
     ];
@@ -34,6 +33,21 @@ class Statusbar extends Component {
   style() {
     return `
       *:not(:defined) { display: none; }
+
+    .tab-item {
+    width: 35px;
+    text-align: center;
+    font: 700 13px 'JetBrains Mono', monospace;
+    color: rgba(212, 190, 152, 0.5);
+    padding: 6px 0;
+    transition: all .1s;
+    cursor: pointer;
+    line-height: 0l
+    height: 100%;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
 
       #tabs,
       #tabs .widgets,
@@ -66,7 +80,7 @@ class Statusbar extends Component {
       #tabs ul li:not(:last-child) {
           width: 35px;
           text-align: center;
-          font: 700 13px 'Roboto', sans-serif;
+          font: 700 13px 'JetBrains Mono', monospace;
           color: rgba(212, 190, 152, 0.5);
           padding: 6px 0;
           transition: all .1s;
@@ -324,7 +338,7 @@ createTabs() {
     const romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]; // Extend this array as needed
 
     for (let i = 0; i < categoriesCount; i++) { // Change to < instead of <=
-        this.refs.indicator.innerHTML += `<li tab-index=${i} ${i == 0 ? "active" : ""}>${romanNumerals[i]}</li>`;
+        this.refs.indicator.innerHTML += `<li class="tab-item" tab-index=${i} ${i == 0 ? "active" : ""}>${romanNumerals[i]}</li>`;
     }
 }
 

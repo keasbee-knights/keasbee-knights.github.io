@@ -6,7 +6,6 @@ class Component extends HTMLElement {
   resources = {
     fonts: {
       jbm: '<link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:100,400,700" rel="stylesheet">',
-      roboto: '<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">',
       worksan: '<link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">',
       inter: '<link href="https://fonts.googleapis.com/css?family=Inter:600" rel="stylesheet">'
     },

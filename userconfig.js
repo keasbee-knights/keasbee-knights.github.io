@@ -7,7 +7,7 @@ const default_config = {
         "scale": "F"
     },
     "clock": {
-        "format": "m/d/y | H:i",
+        "format": "a, B d Y | H:i",
         "iconColor": "#d65d0e"
     },
     "search": {
