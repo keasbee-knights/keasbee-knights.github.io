@@ -35,54 +35,48 @@ class Statusbar extends Component {
     return `
       *:not(:defined) { display: none; }
 
+      @counter-style roman {
+      system: cyclic;
+      symbols: (I, II, III, IV, V, VI, VII, VIII, IX, X);
+      }
+
       #tabs,
       #tabs .widgets,
       #tabs ul li:last-child {
           position: absolute;
       }
 
-      @counter-style roman {
-      system: cyclic;
-      symbols: (I, II, III, IV, V, VI, VII, VIII, IX, X);
-      }
-      
-      #tabs {
-          width: 100%;
-          height: 100%;
-      }
+     #tabs ul {
+    counter-reset: tabs; /* Reset the counter */
+    height: 100%;
+    position: relative;
+    list-style: none;
+    margin-left: 1em;
+    }
 
-      #tabs ul {
-          counter-reset: tabs; /* Reset the counter */
-          height: 100%;
-          position: relative;
-          list-style: none;
-          margin-left: 1em;
-      }
+    #tabs ul li {
+    counter-increment: tabs; /* Increment the counter here */
+    width: 35px;
+    text-align: center;
+    font: 700 13px 'JetBrains Mono', monospace;
+    color: rgba(212, 190, 152, 0.5);
+    padding: 6px 0;
+    transition: all .1s;
+    cursor: pointer;
+    line-height: 0;
+    height: 100%;
+    }
 
-      #tabs ul li:not(:last-child)::after {
-          content: counter(tabs, roman) ". "; /* Display the Roman numeral */
-          counter-increment: tabs; /* Increment the counter */
-          list-style-type: roman; /* Use the Roman numeral counter */
-          display: flex;
-          width: 100%;
-          height: 100%;
-          position: relative;
-          align-items: center;
-          text-align: center;
-          justify-content: center;
-      }
-
-      #tabs ul li:not(:last-child) {
-          width: 35px;
-          text-align: center;
-          font: 700 13px 'JetBrains Mono', monospace;
-          color: rgba(212, 190, 152, 0.5);
-          padding: 6px 0;
-          transition: all .1s;
-          cursor: pointer;
-          line-height: 0;
-          height: 100%;
-      }
+    #tabs ul li::before {
+    content: counter(tabs, roman) ". "; /* Display the Roman numeral */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    }
 
       #tabs ul li:not(:last-child):hover {
           background: #32302f;
