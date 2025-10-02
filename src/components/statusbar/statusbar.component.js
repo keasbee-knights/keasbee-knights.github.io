@@ -46,37 +46,52 @@ class Statusbar extends Component {
           position: absolute;
       }
 
-     #tabs ul {
-    counter-reset: tabs; /* Reset the counter */
-    height: 100%;
-    position: relative;
-    list-style: none;
-    margin-left: 1em;
-    }
+      #tabs {
+          width: 100%;
+          height: 100%;
+      }
 
-    #tabs ul li {
-    counter-increment: tabs; /* Increment the counter here */
-    width: 35px;
-    text-align: center;
-    font: 700 13px 'JetBrains Mono', monospace;
-    color: rgba(212, 190, 152, 0.5);
-    padding: 6px 0;
-    transition: all .1s;
-    cursor: pointer;
-    line-height: 0;
-    height: 100%;
-    }
+      #tabs ul {
+          counter-reset: tabs;
+          height: 100%;
+          position: relative;
+          list-style: none;
+          margin-left: 1em;
+      }
 
-    #tabs ul li::before {
-    content: counter(tabs, roman) ". "; /* Display the Roman numeral */
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    }
+            #tabs ul li:not(:last-child)::before {
+          content: counter(tabs, roman);
+          counter-increment: tabs;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+      }
+
+      #tabs ul li:not(:last-child)::after {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+      }
+
+      #tabs ul li:not(:last-child) {
+          width: 35px;
+          text-align: center;
+          font: 700 13px 'Roboto', sans-serif;
+          color: rgba(212, 190, 152, 0.5);
+          padding: 6px 0;
+          transition: all .1s;
+          cursor: pointer;
+          line-height: 0;
+          height: 100%;
+      }
 
       #tabs ul li:not(:last-child):hover {
           background: #32302f;
@@ -234,8 +249,8 @@ class Statusbar extends Component {
                 </button>
                 <ul class="- indicator"></ul>
                 <div class="+ widgets col-end">
-                    <weather-forecast class="+ widget weather"></weather-forecast>
-                    <current-time class="+ widget"></current-time>
+                <weather-forecast class="+ widget weather"></weather-forecast>
+                <current-time class="+ widget"></current-time>
                 </div>
             </cols>
         </div>`;
