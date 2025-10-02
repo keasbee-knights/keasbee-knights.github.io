@@ -35,11 +35,6 @@ class Statusbar extends Component {
     return `
       *:not(:defined) { display: none; }
 
-    @counter-style roman {
-      system: cyclic;
-      symbols: (I, II, III, IV, V, VI, VII, VIII, IX, X);
-      }
-
       #tabs,
       #tabs .widgets,
       #tabs ul li:last-child {
@@ -52,18 +47,10 @@ class Statusbar extends Component {
       }
 
       #tabs ul {
-          counter-reset: tabs;
           height: 100%;
           position: relative;
           list-style: none;
           margin-left: 1em;
-      }
-      #tabs ul li {
-          counter-increment: tabs; /* Increment the counter for each tab */
-      }
-
-      #tabs ul li::before {
-        content: counter(tabs, roman) ". "; /* Display the Roman numeral */
       }
 
       #tabs ul li:not(:last-child)::after {
@@ -332,15 +319,15 @@ class Statusbar extends Component {
     );
   }
 
-  createTabs() {
+createTabs() {
     const categoriesCount = this.externalRefs.categories.length;
+    const romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]; // Extend this array as needed
 
-    for (let i = 0; i <= categoriesCount; i++) {
-      this.refs.indicator.innerHTML += `<li tab-index=${i} ${
-        i == 0 ? "active" : ""
-      }></li>`;
+    for (let i = 0; i < categoriesCount; i++) { // Change to < instead of <=
+        this.refs.indicator.innerHTML += `<li tab-index=${i} ${i == 0 ? "active" : ""}>${romanNumerals[i]}</li>`;
     }
-  }
+}
+
 
   activate(target, item) {
     target.forEach((i) => i.removeAttribute("active"));
