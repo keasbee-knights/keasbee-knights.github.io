@@ -41,13 +41,18 @@ class Statusbar extends Component {
           position: absolute;
       }
 
+      @counter-style roman {
+      system: cyclic;
+      symbols: (I, II, III, IV, V, VI, VII, VIII, IX, X);
+      }
+      
       #tabs {
           width: 100%;
           height: 100%;
       }
 
       #tabs ul {
-          counter-reset: tabs;
+          counter-reset: tabs; /* Reset the counter */
           height: 100%;
           position: relative;
           list-style: none;
@@ -55,8 +60,9 @@ class Statusbar extends Component {
       }
 
       #tabs ul li:not(:last-child)::after {
-          content: counter(tabs, cjk-ideographic);
-          counter-increment: tabs;
+          content: counter(tabs, roman) ". "; /* Display the Roman numeral */
+          counter-increment: tabs; /* Increment the counter */
+          list-style-type: roman; /* Use the Roman numeral counter */
           display: flex;
           width: 100%;
           height: 100%;
@@ -69,7 +75,7 @@ class Statusbar extends Component {
       #tabs ul li:not(:last-child) {
           width: 35px;
           text-align: center;
-          font: 700 13px 'Roboto', sans-serif;
+          font: 700 13px 'JetBrains Mono', monospace;
           color: rgba(212, 190, 152, 0.5);
           padding: 6px 0;
           transition: all .1s;
