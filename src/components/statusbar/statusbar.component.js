@@ -54,7 +54,7 @@ class Statusbar extends Component {
       }
 
       #tabs ul li:not(:last-child)::after {
-          content: counter(tabs);
+          content: counter(tabs, upper-roman);
           counter-increment: tabs;
           display: flex;
           width: 100%;
