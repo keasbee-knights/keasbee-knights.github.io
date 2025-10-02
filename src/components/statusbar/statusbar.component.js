@@ -34,21 +34,6 @@ class Statusbar extends Component {
     return `
       *:not(:defined) { display: none; }
 
-    .tab-item {
-    width: 35px;
-    text-align: center;
-    font: 700 13px 'JetBrains Mono', monospace;
-    color: rgba(212, 190, 152, 0.5);
-    padding: 6px 0;
-    transition: all .1s;
-    cursor: pointer;
-    line-height: 0l
-    height: 100%;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-}
-
-
       #tabs,
       #tabs .widgets,
       #tabs ul li:last-child {
@@ -61,6 +46,7 @@ class Statusbar extends Component {
       }
 
       #tabs ul {
+          counter-reset: tabs;
           height: 100%;
           position: relative;
           list-style: none;
@@ -68,6 +54,8 @@ class Statusbar extends Component {
       }
 
       #tabs ul li:not(:last-child)::after {
+          content: counter(tabs);
+          counter-increment: tabs;
           display: flex;
           width: 100%;
           height: 100%;
@@ -333,15 +321,15 @@ class Statusbar extends Component {
     );
   }
 
-createTabs() {
+  createTabs() {
     const categoriesCount = this.externalRefs.categories.length;
-    const romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]; // Extend this array as needed
 
-    for (let i = 0; i < categoriesCount; i++) { // Change to < instead of <=
-        this.refs.indicator.innerHTML += `<li class="tab-item" tab-index=${i} ${i == 0 ? "active" : ""}>${romanNumerals[i]}</li>`;
+    for (let i = 0; i <= categoriesCount; i++) {
+      this.refs.indicator.innerHTML += `<li tab-index=${i} ${
+        i == 0 ? "active" : ""
+      }></li>`;
     }
-}
-
+  }
 
   activate(target, item) {
     target.forEach((i) => i.removeAttribute("active"));
