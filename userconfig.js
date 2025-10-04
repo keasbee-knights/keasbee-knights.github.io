@@ -60,74 +60,63 @@ const default_config = {
                     "name": "Social Media",
                     "links": [
                         {
-                            "name": "whatsapp",
-                            "url": "https://web.whatsapp.com/",
-                            "icon": "brand-whatsapp",
-                            "icon_color": "#a9b665"
-                        },
-                        {
-                            "name": "twitter",
-                            "url": "https://twitter.com/home",
-                            "icon": "brand-twitter-filled",
-                            "icon_color": "#7daea3"
-                        },
-                        {
-                            "name": "reddit",
-                            "url": "https://www.reddit.com/",
-                            "icon": "brand-reddit",
-                            "icon_color": "#e78a4e"
-                        },
-                        {
-                            "name": "youtube",
-                            "url": "https://www.youtube.com/",
-                            "icon": "brand-youtube-filled",
-                            "icon_color": "#ea6962"
+                            "name": "discord",
+                            "url": "https://www.discord.com/",
+                            "icon": "brand-discord",
+                            "icon_color": "#8ec07c"
                         },
                         {
                             "name": "twitch",
                             "url": "https://www.twitch.tv/",
                             "icon": "brand-twitch",
                             "icon_color": "#d3869b"
+                        },
+                        {
+                            "name": "twitter",
+                            "url": "https://twitter.com/home",
+                            "icon": "brand-twitter-filled",
+                            "icon_color": "#83a598"
+                        },
+                        {
+                            "name": "youtube",
+                            "url": "https://www.youtube.com/",
+                            "icon": "brand-youtube-filled",
+                            "icon_color": "#fabd2f"
                         }
-                    ]
+                    ],
                 },
                 {
                     "name": "Games",
                     "links": [
                         {
-                            "name": "chess",
-                            "url": "https://www.chess.com/home",
-                            "icon": "chess-queen-filled",
-                            "icon_color": "#a9b665"
+                            "name": "Arena.net",
+                            "url": "https://www.arena.net",
+                            "icon": "square-letter-a",
+                            "icon_color": "#b8bb26"
                         },
                         {
-                            "name": "monkeytype",
-                            "url": "https://monkeytype.com/",
-                            "icon": "keyboard",
-                            "icon_color": "#e78a4e"
+                            "name": "EA Origin",
+                            "url": "https://www.ea.com/ea-app",
+                            "icon": "brand-electronic-arts",
+                            "icon_color": "#fb4934"
                         },
                         {
-                            "name": "tetris",
-                            "url": "https://tetris.com/",
-                            "icon": "brand-apple-arcade",
-                            "icon_color": "#ea6962"
-                        }
-                    ]
-                },
-                {
-                    "name": "Video",
-                    "links": [
+                            "name": "Epic Games",
+                            "url": "https://epicgames.com/",
+                            "icon": "device-gamepad-3",
+                            "icon_color": "#fe8019"
+                        },                        
                         {
-                            "name": "disney+",
-                            "url": "https://www.disneyplus.com/home",
-                            "icon": "brand-disney",
-                            "icon_color": "#7daea3"
+                            "name": "Humble",
+                            "url": "https://humblebundle.com/",
+                            "icon": "bubble",
+                            "icon_color": "#8ec07c"
                         },
                         {
-                            "name": "primevideo",
-                            "url": "https://www.primevideo.com/region/eu/?ref_=dv_web_unknown",
-                            "icon": "brand-amazon",
-                            "icon_color": "#7daea3"
+                            "name": "Steam",
+                            "url": "https://steampowered.com/",
+                            "icon": "brand-steam",
+                            "icon_color": "#d369b"
                         }
                     ]
                 }
@@ -144,25 +133,19 @@ const default_config = {
                             "name": "pinterest",
                             "url": "https://www.pinterest.es/",
                             "icon": "brand-pinterest",
-                            "icon_color": "#ea6962"
+                            "icon_color": "#83a598"
                         },
                         {
                             "name": "artstation",
                             "url": "https://www.artstation.com/?sort_by=community",
                             "icon": "chart-area",
-                            "icon_color": "#7daea3"
+                            "icon_color": "#fabd2f"
                         },
                         {
-                            "name": "leonardo ai",
-                            "url": "https://app.leonardo.ai/",
-                            "icon": "brand-openai",
-                            "icon_color": "#89b482"
-                        },
-                        {
-                            "name": "dribble",
-                            "url": "https://dribbble.com/following",
-                            "icon": "brand-dribbble-filled",
-                            "icon_color": "#d3869b"
+                            "name": "wallhaven",
+                            "url": "https://wallhaven.cc",
+                            "icon": "wall",
+                            "icon_color": "#b8bb26"
                         }
                     ]
                 },
@@ -173,42 +156,30 @@ const default_config = {
                             "name": "figma",
                             "url": "https://www.figma.com",
                             "icon": "brand-figma",
-                            "icon_color": "#d3869b"
+                            "icon_color": "#fb4934"
                         },
                         {
                             "name": "uxpro",
                             "url": "https://uxpro.cc/",
                             "icon": "components",
-                            "icon_color": "#a9b665"
+                            "icon_color": "#fe8019"
                         },
                         {
                             "name": "colorhunt",
                             "url": "https://colorhunt.co/",
                             "icon": "color-picker",
-                            "icon_color": "#ea6962"
-                        },
-                        {
-                            "name": "adobe color",
-                            "url": "https://color.adobe.com/es/create/color-wheel",
-                            "icon": "brand-adobe",
-                            "icon_color": "#7daea3"
-                        },
-                        {
-                            "name": "terminalsexy",
-                            "url": "https://terminal.sexy",
-                            "icon": "prompt",
-                            "icon_color": "#e78a4e"
+                            "icon_color": "#8ec07c"
                         }
                     ]
                 },
                 {
-                    "name": "resources 3d",
+                    "name": "3d resources",
                     "links": [
                         {
                             "name": "thingiverse",
                             "url": "https://www.thingiverse.com/",
                             "icon": "circle-letter-t",
-                            "icon_color": "#7daea3"
+                            "icon_color": "#d3869b"
                         }
                     ]
                 }
@@ -225,13 +196,13 @@ const default_config = {
                             "name": "github",
                             "url": "https://github.com/",
                             "icon": "brand-github",
-                            "icon_color": "#7daea3"
+                            "icon_color": "#83a598"
                         },
                         {
                             "name": "gitlab",
                             "url": "https://gitlab.com/",
                             "icon": "brand-gitlab",
-                            "icon_color": "#e78a4e"
+                            "icon_color": "#fabd2f"
                         }
                     ]
                 },
@@ -242,25 +213,19 @@ const default_config = {
                             "name": "phind",
                             "url": "https://www.phind.com/",
                             "icon": "brand-openai",
-                            "icon_color": "#89b482"
+                            "icon_color": "#b8bb26"
                         },
                         {
                             "name": "flutter",
                             "url": "https://docs.flutter.dev/ui",
                             "icon": "brand-flutter",
-                            "icon_color": "#7daea3"
+                            "icon_color": "#fb4934"
                         },
                         {
                             "name": "hacktricks",
                             "url": "https://book.hacktricks.xyz/welcome/readme",
                             "icon": "biohazard",
-                            "icon_color": "#ea6962"
-                        },
-                        {
-                            "name": "vscode",
-                            "url": "https://vscode.dev/",
-                            "icon": "brand-vscode",
-                            "icon_color": "#7daea3"
+                            "icon_color": "#fe8019"
                         }
                     ]
                 },
@@ -271,25 +236,25 @@ const default_config = {
                             "name": "hackthebox",
                             "url": "https://app.hackthebox.com",
                             "icon": "box",
-                            "icon_color": "#a9b665"
+                            "icon_color": "#8ec07c"
                         },
                         {
                             "name": "cryptohack",
                             "url": "https://cryptohack.org/challenges/",
                             "icon": "brain",
-                            "icon_color": "#e78a4e"
+                            "icon_color": "#d3869b"
                         },
                         {
                             "name": "tryhackme",
                             "url": "https://tryhackme.com/dashboard",
                             "icon": "brand-onedrive",
-                            "icon_color": "#ea6962"
+                            "icon_color": "#83a598"
                         },
                         {
                             "name": "hackerrank",
                             "url": "https://www.hackerrank.com/dashboard",
                             "icon": "code-asterix",
-                            "icon_color": "#a9b665"
+                            "icon_color": "#fabd2f"
                         }
                     ]
                 }
@@ -303,10 +268,10 @@ const default_config = {
                     "name": "mails",
                     "links": [
                         {
-                            "name": "gmail",
-                            "url": "https://mail.google.com/mail/u/0/",
-                            "icon": "brand-gmail",
-                            "icon_color": "#ea6962"
+                            "name": "mailbox",
+                            "url": "https://mailbox.org",
+                            "icon": "mail",
+                            "icon_color": "#b8bb26"
                         }
                     ]
                 },
@@ -314,22 +279,10 @@ const default_config = {
                     "name": "storage",
                     "links": [
                         {
-                            "name": "drive",
-                            "url": "https://drive.google.com/drive/u/0/my-drive",
-                            "icon": "brand-google-drive",
-                            "icon_color": "#e78a4e"
-                        },
-                        {
-                            "name": "dropbox",
-                            "url": "https://www.dropbox.com/h?role=personal&di=left_nav",
-                            "icon": "box-seam",
-                            "icon_color": "#7daea3"
-                        },
-                        {
-                            "name": "fotos",
-                            "url": "https://photos.google.com/u/1",
-                            "icon": "photo-filled",
-                            "icon_color": "#ea6962"
+                            "name": "hetzner",
+                            "url": "https://hetzner.com",
+                            "icon": "circle-letter-h",
+                            "icon_color": "#fb4934"
                         }
                     ]
                 },
@@ -337,11 +290,29 @@ const default_config = {
                     "name": "stuff",
                     "links": [
                         {
-                            "name": "linkedin",
-                            "url": "https://www.linkedin.com/feed/",
-                            "icon": "brand-linkedin",
-                            "icon_color": "#7daea3"
-                        }
+                            "name": "champagne piracy",
+                            "url": "https://champagne.pages.dev/",
+                            "icon": "skull",
+                            "icon_color": "#fe8019"
+                        },
+                        {
+                            "name": "espn",
+                            "url": "https://www.espn.com",
+                            "icon": "ball-american-football",
+                            "icon_color": "#8ec07c"
+                        },
+                        {
+                            "name": "hltv",
+                            "url": "https://www.hltv.org",
+                            "icon": "ball-american-football",
+                            "icon_color": "#d3869b"
+                        },
+                        {
+                            "name": "liquidpedia",
+                            "url": "https://www.liquidpedia.com",
+                            "icon": "droplets",
+                            "icon_color": "#83a598"
+                        },
                     ]
                 }
             ]
