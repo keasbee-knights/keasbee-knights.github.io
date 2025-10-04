@@ -103,13 +103,13 @@ const default_config = {
                         {
                             "name": "Epic Games",
                             "url": "https://epicgames.com/",
-                            "icon": "device-gamepad-3",
+                            "icon": "device-gamepad-2",
                             "icon_color": "#fe8019"
                         },                        
                         {
                             "name": "Humble",
                             "url": "https://humblebundle.com/",
-                            "icon": "bubble",
+                            "icon": "moneybag",
                             "icon_color": "#8ec07c"
                         },
                         {
