@@ -309,7 +309,7 @@ const default_config = {
                         },
                         {
                             "name": "liquidpedia",
-                            "url": "https://www.liquidpedia.com",
+                            "url": "https://www.liquidpedia.net",
                             "icon": "droplets",
                             "icon_color": "#83a598"
                         },
