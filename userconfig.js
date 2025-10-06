@@ -53,7 +53,7 @@ const default_config = {
     "openLastVisitedTab": true,
     "tabs": [
         {
-            "name": "page 1",
+            "name": "one",
             "background_url": "src/img/banners/cbg-3.gif",
             "categories": [
                 {
@@ -89,28 +89,28 @@ const default_config = {
                     "name": "Games",
                     "links": [
                         {
-                            "name": "EA Origin",
+                            "name": "ea origin",
                             "url": "https://www.ea.com/ea-app",
                             "icon": "brand-electronic-arts",
                             "icon_color": "#fb4934"
                         },
                         {
-                            "name": "Epic Games",
+                            "name": "epic games",
                             "url": "https://epicgames.com/",
                             "icon": "device-gamepad-2",
                             "icon_color": "#fe8019"
                         },                        
                         {
-                            "name": "Humble",
+                            "name": "humble",
                             "url": "https://humblebundle.com/",
                             "icon": "moneybag",
                             "icon_color": "#8ec07c"
                         },
                         {
-                            "name": "Steam",
+                            "name": "steam",
                             "url": "https://steampowered.com/",
                             "icon": "brand-steam",
-                            "icon_color": "#d369b"
+                            "icon_color": "#d3869b"
                         }
                     ]
                 },
@@ -118,25 +118,25 @@ const default_config = {
                     "name": "Guild Wars 2",
                     "links": [
                         {
-                            "name": "Arena.net",
+                            "name": "arena.net",
                             "url": "https://www.arena.net",
-                            "icon": "square-letter-a",
+                            "icon": "circle-letter-a",
                             "icon_color": "#b8bb26"
                         },
                         {
-                            "name": "GW2 Efficency",
+                            "name": "gw2 efficency",
                             "url": "https://gw2efficiency.com/",
-                            "icon": "windmill",
+                            "icon": "award-filled",
                             "icon_color": "#fb4934"
                         },
                         {
-                            "name": "GW2 Wingman",
+                            "name": "gw2 wingman",
                             "url": "https://gw2wingman.nevermindcreations.de/home",
                             "icon": "windmill",
                             "icon_color": "#fe8019"
                         },                        
                         {
-                            "name": "Killproof",
+                            "name": "killproof",
                             "url": "https://humblebundle.com/",
                             "icon": "receipt",
                             "icon_color": "#8ec07c"
@@ -146,7 +146,7 @@ const default_config = {
             ]
         },
         {
-            "name": "page 2",
+            "name": "two",
             "background_url": "src/img/banners/cbg-6.gif",
             "categories": [
                 {
@@ -155,20 +155,55 @@ const default_config = {
                         {
                             "name": "espn",
                             "url": "https://espn.com/",
-                            "icon": "american-football",
+                            "icon": "ball-american-football",
                             "icon_color": "#83a598"
                         },
                         {
                             "name": "hltv",
                             "url": "https://hltv.org/",
                             "icon": "target",
-                            "icon_color": "#83a598"
+                            "icon_color": "#fe8019"
                         },
                         {
                             "name": "liquipedia",
                             "url": "https://liquipedia.net/",
-                            "icon": "droplets-filled",
-                            "icon_color": "#83a598"
+                            "icon": "bucket-droplets",
+                            "icon_color": "#b8bb26"
+                        },
+                        {
+                            "name": "nhl66",
+                            "url": "https://nhl66.ir/",
+                            "icon": "ice-skating",
+                            "icon_color": "#fb4934"
+                        }                                                   
+                    ]
+                },
+                {
+                    "name": "other",
+                    "links": [
+                        {
+                            "name": "champagne wiki",
+                            "url": "https://champagne.pages.dev/",
+                            "icon": "skull",
+                            "icon_color": "#8ec07c"
+                        },
+                        {
+                            "name": "mailbox",
+                            "url": "https://mailbox.org/en/",
+                            "icon": "mail",
+                            "icon_color": "#b8bb26"
+                        },
+                        {
+                            "name": "thingiverse",
+                            "url": "https://www.thingiverse.com/",
+                            "icon": "circle-letter-t",
+                            "icon_color": "#fb4934"
+                        },
+                        {
+                            "name": "wallhaven",
+                            "url": "https://www.wallhaven.cc/",
+                            "icon": "wallpaper",
+                            "icon_color": "#d3869b"
                         }                        
                     ]
                 }
