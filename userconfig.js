@@ -54,7 +54,7 @@ const default_config = {
     "tabs": [
         {
             "name": "one",
-            "background_url": "src/img/banners/cbg-3.gif",
+            "background_url": "src/img/banners/cbg-8.gif",
             "categories": [
                 {
                     "name": "Social Media",
@@ -147,7 +147,7 @@ const default_config = {
         },
         {
             "name": "two",
-            "background_url": "src/img/banners/cbg-6.gif",
+            "background_url": "src/img/banners/cbg-5.gif",
             "categories": [
                 {
                     "name": "sports and scores",
