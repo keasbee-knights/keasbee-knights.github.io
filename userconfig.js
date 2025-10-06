@@ -53,8 +53,8 @@ const default_config = {
     "openLastVisitedTab": true,
     "tabs": [
         {
-            "name": "chi ll",
-            "background_url": "src/img/banners/cbg-2.gif",
+            "name": "page 1",
+            "background_url": "src/img/banners/cbg-3.gif",
             "categories": [
                 {
                     "name": "Social Media",
@@ -89,12 +89,6 @@ const default_config = {
                     "name": "Games",
                     "links": [
                         {
-                            "name": "Arena.net",
-                            "url": "https://www.arena.net",
-                            "icon": "square-letter-a",
-                            "icon_color": "#b8bb26"
-                        },
-                        {
                             "name": "EA Origin",
                             "url": "https://www.ea.com/ea-app",
                             "icon": "brand-electronic-arts",
@@ -119,200 +113,63 @@ const default_config = {
                             "icon_color": "#d369b"
                         }
                     ]
+                },
+                {
+                    "name": "Guild Wars 2",
+                    "links": [
+                        {
+                            "name": "Arena.net",
+                            "url": "https://www.arena.net",
+                            "icon": "square-letter-a",
+                            "icon_color": "#b8bb26"
+                        },
+                        {
+                            "name": "GW2 Efficency",
+                            "url": "https://gw2efficiency.com/",
+                            "icon": "windmill",
+                            "icon_color": "#fb4934"
+                        },
+                        {
+                            "name": "GW2 Wingman",
+                            "url": "https://gw2wingman.nevermindcreations.de/home",
+                            "icon": "windmill",
+                            "icon_color": "#fe8019"
+                        },                        
+                        {
+                            "name": "Killproof",
+                            "url": "https://humblebundle.com/",
+                            "icon": "receipt",
+                            "icon_color": "#8ec07c"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "name": "design",
+            "name": "page 2",
             "background_url": "src/img/banners/cbg-6.gif",
             "categories": [
                 {
-                    "name": "inspiration",
+                    "name": "sports and scores",
                     "links": [
-                        {
-                            "name": "pinterest",
-                            "url": "https://www.pinterest.es/",
-                            "icon": "brand-pinterest",
-                            "icon_color": "#83a598"
-                        },
-                        {
-                            "name": "artstation",
-                            "url": "https://www.artstation.com/?sort_by=community",
-                            "icon": "chart-area",
-                            "icon_color": "#fabd2f"
-                        },
-                        {
-                            "name": "wallhaven",
-                            "url": "https://wallhaven.cc",
-                            "icon": "wall",
-                            "icon_color": "#b8bb26"
-                        }
-                    ]
-                },
-                {
-                    "name": "resources",
-                    "links": [
-                        {
-                            "name": "figma",
-                            "url": "https://www.figma.com",
-                            "icon": "brand-figma",
-                            "icon_color": "#fb4934"
-                        },
-                        {
-                            "name": "uxpro",
-                            "url": "https://uxpro.cc/",
-                            "icon": "components",
-                            "icon_color": "#fe8019"
-                        },
-                        {
-                            "name": "colorhunt",
-                            "url": "https://colorhunt.co/",
-                            "icon": "color-picker",
-                            "icon_color": "#8ec07c"
-                        }
-                    ]
-                },
-                {
-                    "name": "3d resources",
-                    "links": [
-                        {
-                            "name": "thingiverse",
-                            "url": "https://www.thingiverse.com/",
-                            "icon": "circle-letter-t",
-                            "icon_color": "#d3869b"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "dev",
-            "background_url": "src/img/banners/cbg-7.gif",
-            "categories": [
-                {
-                    "name": "repositories",
-                    "links": [
-                        {
-                            "name": "github",
-                            "url": "https://github.com/",
-                            "icon": "brand-github",
-                            "icon_color": "#83a598"
-                        },
-                        {
-                            "name": "gitlab",
-                            "url": "https://gitlab.com/",
-                            "icon": "brand-gitlab",
-                            "icon_color": "#fabd2f"
-                        }
-                    ]
-                },
-                {
-                    "name": "resources",
-                    "links": [
-                        {
-                            "name": "phind",
-                            "url": "https://www.phind.com/",
-                            "icon": "brand-openai",
-                            "icon_color": "#b8bb26"
-                        },
-                        {
-                            "name": "flutter",
-                            "url": "https://docs.flutter.dev/ui",
-                            "icon": "brand-flutter",
-                            "icon_color": "#fb4934"
-                        },
-                        {
-                            "name": "hacktricks",
-                            "url": "https://book.hacktricks.xyz/welcome/readme",
-                            "icon": "biohazard",
-                            "icon_color": "#fe8019"
-                        }
-                    ]
-                },
-                {
-                    "name": "challenges",
-                    "links": [
-                        {
-                            "name": "hackthebox",
-                            "url": "https://app.hackthebox.com",
-                            "icon": "box",
-                            "icon_color": "#8ec07c"
-                        },
-                        {
-                            "name": "cryptohack",
-                            "url": "https://cryptohack.org/challenges/",
-                            "icon": "brain",
-                            "icon_color": "#d3869b"
-                        },
-                        {
-                            "name": "tryhackme",
-                            "url": "https://tryhackme.com/dashboard",
-                            "icon": "brand-onedrive",
-                            "icon_color": "#83a598"
-                        },
-                        {
-                            "name": "hackerrank",
-                            "url": "https://www.hackerrank.com/dashboard",
-                            "icon": "code-asterix",
-                            "icon_color": "#fabd2f"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "myself",
-            "background_url": "src/img/banners/cbg-9.gif",
-            "categories": [
-                {
-                    "name": "mails",
-                    "links": [
-                        {
-                            "name": "mailbox",
-                            "url": "https://mailbox.org",
-                            "icon": "mail",
-                            "icon_color": "#b8bb26"
-                        }
-                    ]
-                },
-                {
-                    "name": "storage",
-                    "links": [
-                        {
-                            "name": "hetzner",
-                            "url": "https://hetzner.com",
-                            "icon": "circle-letter-h",
-                            "icon_color": "#fb4934"
-                        }
-                    ]
-                },
-                {
-                    "name": "stuff",
-                    "links": [
-                        {
-                            "name": "champagne piracy",
-                            "url": "https://champagne.pages.dev/",
-                            "icon": "skull",
-                            "icon_color": "#fe8019"
-                        },
                         {
                             "name": "espn",
-                            "url": "https://www.espn.com",
-                            "icon": "ball-american-football",
-                            "icon_color": "#8ec07c"
+                            "url": "https://espn.com/",
+                            "icon": "american-football",
+                            "icon_color": "#83a598"
                         },
                         {
                             "name": "hltv",
-                            "url": "https://www.hltv.org",
-                            "icon": "ball-american-football",
-                            "icon_color": "#d3869b"
-                        },
-                        {
-                            "name": "liquidpedia",
-                            "url": "https://www.liquidpedia.net",
-                            "icon": "droplets",
+                            "url": "https://hltv.org/",
+                            "icon": "target",
                             "icon_color": "#83a598"
                         },
+                        {
+                            "name": "liquipedia",
+                            "url": "https://liquipedia.net/",
+                            "icon": "droplets-filled",
+                            "icon_color": "#83a598"
+                        }                        
                     ]
                 }
             ]
