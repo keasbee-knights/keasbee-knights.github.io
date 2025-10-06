@@ -167,7 +167,7 @@ const default_config = {
                         {
                             "name": "liquipedia",
                             "url": "https://liquipedia.net/",
-                            "icon": "bucket-droplets",
+                            "icon": "bucket-droplet",
                             "icon_color": "#b8bb26"
                         },
                         {
