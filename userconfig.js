@@ -18,8 +18,8 @@ const default_config = {
             ],
 
             "g": [
-                "https://google.com/search?q=",
-                "Google"
+                "https://search.sethforprivacy.com/search?q=%s",
+                "Whoogle"
             ],
 
             "p": [
